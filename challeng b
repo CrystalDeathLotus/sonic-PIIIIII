@@ -1,0 +1,209 @@
+#challeng b
+
+
+
+live_loop:snare do
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sleep 8
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+  sample :drum_snare_soft
+  sleep 2
+end
+live_loop:bass do
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sleep 16
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+end
+live_loop:Cymbal do
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sleep 24
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_cymbal_closed
+  sleep 0.5
+  
+end
+
+
+live_loop:splash do
+  sleep 20
+  sample :drum_splash_hard
+  sleep 2
+  sample :drum_splash_hard
+  sleep 2
+  sample :drum_splash_hard
+  sleep 2
+  sample :drum_splash_hard
+  sleep 2
+  sleep 8
+end
+
+live_loop:hard do
+  sleep 20
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sample :drum_cymbal_hard
+  sleep 0.5
+  sleep 8
+end
