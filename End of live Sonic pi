@@ -170,4 +170,12 @@ live_loop :Righthand do
   sleep 0.5
   play:f3, sustain: 0.5, amp: 0.5
   sleep 0.5
+  play:d4, sustain: 3, amp: 0.5
+  play:a3, sustain: 3, amp: 0.5
+  play:f3, sustain: 3, amp: 0.5
+  play:d3, sustain: 3, amp: 0.5
+  sleep 3
+  play:f4, sustain: 1, amp: 0.5
+  play:a3, sustain: 1, amp: 0.5
+  sleep 1
 end
