@@ -168,8 +168,8 @@ live_loop :Righthand do
   sleep 0.5
   play:a3, sustain: 0.5, amp: 0.5
   sleep 0.5
-  play:f3, sustain: 0.5, amp: 0.5
-  sleep 0.5
+  play:f3, sustain: 1, amp: 0.5
+  sleep 1
   play:d4, sustain: 3, amp: 0.5
   play:a3, sustain: 3, amp: 0.5
   play:f3, sustain: 3, amp: 0.5
@@ -178,4 +178,23 @@ live_loop :Righthand do
   play:f4, sustain: 1, amp: 0.5
   play:a3, sustain: 1, amp: 0.5
   sleep 1
+  play:d4, sustain: 4, amp: 0.5
+  play:bb3, sustain: 4, amp: 0.5
+  play:g3, sustain: 4, amp: 0.5
+  play:d3, sustain: 4, amp: 0.5
+  sleep 4
+  play:eb4, sustain: 3, amp: 0.5
+  play:bb3, sustain: 3, amp: 0.5
+  play:g3, sustain: 3, amp: 0.5
+  play:eb3, sustain: 3, amp: 0.5
+  sleep 3
+  play:g4, sustain: 0.75, amp: 0.5
+  sleep 0.75
+  sleep 0.125
+  sleep 0.5
+  play:d4, sustain: 2, amp: 0.5
+  play:c4, sustain: 2, amp: 0.5
+  play:bb3, sustain: 2, amp: 0.5
+  play:g3, sustain: 2, amp: 0.5
+  sleep 2
 end
