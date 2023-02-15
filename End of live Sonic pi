@@ -34,11 +34,11 @@ live_loop :Lefthand do
   sleep 0.5
   play:d5,sustain: 0.5, amp: 0.5
   sleep 0.5
-  play:e5,sustain: 0.25, amp: 0.5
+  play:eb5,sustain: 0.25, amp: 0.5
   sleep 0.25
-  play:e5,sustain: 0.25, amp: 0.5
+  play:eb5,sustain: 0.25, amp: 0.5
   sleep 0.25
-  play:e5,sustain: 0.25, amp: 0.5
+  play:eb5,sustain: 0.25, amp: 0.5
   sleep 0.25
   play:d5,sustain: 0.5, amp: 0.5
   sleep 0.5
