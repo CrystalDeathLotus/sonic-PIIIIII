@@ -1,26 +1,34 @@
 use_bpm 90
 # maybe hollow
+instrumental = "C:/Users/Elias Ortiz/Downloads/end of a life((Instrumental)).wav"
+
+
+
+
 use_synth:piano
+define:duoNotes do
+  play:c5,sustain: 2, amp: 0.4555
+  play:f5,sustain: 2, amp: 0.4555
+  sleep 3
+end
+
 
 live_loop :Lefthand do
+  sleep 3
   #1
   sleep 3
   play:f4, amp: 0.25
   sleep 1
   #2
-  play:c5,sustain: 2, amp: 0.35
-  play:f5,sustain: 2, amp: 0.35
-  sleep 3
+  duoNotes
   play:d5, amp: 0.45
   play:g5, amp: 0.45
   sleep 1
   #3
-  play:c5, sustain: 2, amp: 0.5
-  play:f5, sustain: 2, amp: 0.5
-  sleep 3
+  duoNotes
   play:bb4, amp: 0.5
   sleep 1
-  #4
+  #4 (3./75)
   play:a4, sustain: 1,amp: 0.5
   play:f4, sustain: 1,amp: 0.5
   sleep 1
@@ -136,7 +144,7 @@ live_loop :Lefthand do
 end
 live_loop :Righthand do
   #1
-  sleep 4
+  sleep 7
   #2
   play:f4, sustain: 3, amp: 0.5
   play:d4, sustain: 3, amp: 0.5
@@ -209,7 +217,7 @@ live_loop :Righthand do
   #9
 end
 
-live_loop :Midhand do
+live_loop :uphand do
   x = 72
   sleep 8
   play x, amp: 0.0125
@@ -219,4 +227,11 @@ live_loop :Midhand do
     play x , amp: 0.0125
     sleep 2
   end
+  sleep x
+end
+
+live_loop:downhand do
+  sleep 7
+  sample instrumental, amp: 0.25
+  sleep 1
 end
