@@ -1,10 +1,22 @@
 use_bpm 90
 # maybe hollow
+
 instrumental = "C:/Users/Elias Ortiz/Downloads/end of a life((Instrumental)).wav"
+
+
+Ms = ["Measure 1", "Measure 2", "Measure 3","Measure 4", "Measure 5", "Measure 6", "Measure 7", "Measure 8", "Measure 9"]
+
 
 use_synth:piano
 
-Ms = ["Measure 1", "Measure 2", "Measure 3","Measure 4", "Measure 5", "Measure 6", "Measure 7", "Measure 8", "Measure 9"]
+
+define:duoNotes do
+  play:c5,sustain: 2, amp: 0.4555
+  play:f5,sustain: 2, amp: 0.4555
+  sleep 3
+end
+
+
 m = 0
 live_loop :MeasureCounter do
   sleep 3
@@ -16,11 +28,13 @@ live_loop :MeasureCounter do
   sleep 10000
 end
 
+
 define:duoNotes do
   play:c5,sustain: 2, amp: 0.4555
   play:f5,sustain: 2, amp: 0.4555
   sleep 3
 end
+
 
 live_loop :Lefthand do
   sleep 3
@@ -149,8 +163,9 @@ live_loop :Lefthand do
   play:d5,sustain: 0.25, amp: 0.5
   sleep 0.25
   #9
-  
 end
+
+
 live_loop :Righthand do
   #1
   sleep 7
@@ -225,21 +240,27 @@ live_loop :Righthand do
   sleep 0.25
   #9
 end
+
+
 live_loop :uphand do
-  x = 72
-  sleep 8
-  play x, amp: 0.0125
-  sleep 1
-  3.times do
-    x = x + 1
-    play x , amp: 0.0125
-    sleep 2
+  with_fx :echo do
+    x = 72
+    sleep 8
+    play x, amp: 0.0125
+    sleep 1
+    3.times do
+      x = x + 1
+      play x , amp: 0.0125
+      sleep 2
+    end
+    sleep x
   end
-  sleep x
 end
+
 
 live_loop:downhand do
   sleep 7
   sample instrumental, amp: 0.395
   sleep 1
 end
+
