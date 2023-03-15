@@ -3,7 +3,7 @@ use_bpm 90
 
 instrumental = "C:/Users/Elias Ortiz/Downloads/end of a life((Instrumental)).wav"
 
-
+#Array
 Ms = ["Measure 1", "Measure 2", "Measure 3","Measure 4", "Measure 5", "Measure 6", "Measure 7", "Measure 8", "Measure 9"]
 
 
