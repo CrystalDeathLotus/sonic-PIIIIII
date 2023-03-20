@@ -1,0 +1,24 @@
+define :lmao do |a,b,c,d,e,f,g,h|
+  play a,release: 0.5, amp: 0.5, attack: 0.3
+  play b,release: 0.5, amp: 0.5, attack: 0.3
+  sleep 0.5
+  play c,release: 0.5, amp: 0.5, attack: 0.3
+  play d,release: 0.5, amp: 0.5, attack: 0.3
+  sleep 0.5
+  play e,release: 0.5, amp: 0.5, attack: 0.3
+  play f,release: 0.5, amp: 0.5, attack: 0.3
+  sleep 0.5
+  play g,release: 0.5, amp: 0.5, attack: 0.3
+  play h,release: 0.5, amp: 0.5, attack: 0.3
+  sleep 0.5 
+end
+live_loop :theme do
+  lmao :a4,:a5,:a4,:a5,:c5,:c6,:a4,:a5
+  lmao :d5,:d6,:a4,:a5,:e5,:e6,:d5,:d6
+  lmao :c5,:c6,:c5,:c6,:e5,:e6,:c5,:c6
+  lmao :g5,:g6,:c5,:c6,:e5,:e6,:c5,:c6
+  lmao :g4,:g5,:g4,:g5,:b4,:b5,:g4,:g5
+  lmao :c5,:c6,:g4,:g5,:d5,:d6,:c5,:c6
+  lmao :f4,:f5,:f4,:f5,:a4,:a5,:f4,:f5
+  lmao :c5,:c6,:f4,:f5,:c5,:c6,:b4,:b5
+end
