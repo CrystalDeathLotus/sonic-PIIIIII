@@ -1,0 +1,152 @@
+use_bpm 80
+use_synth:piano
+
+flower = "C:/Users/Elias Ortiz/Downloads/Flower dance.wav"
+
+
+define :part1 do
+  play:ds5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:cs5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:gs5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:cs5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  
+  play:ds5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:cs5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:gs4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:cs5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  
+end
+
+live_loop :RightHand do
+  # add 4 more part1's
+  part1
+  part1
+  part1
+  # measure
+  play:ds5,sustain: 4, amp: 0.5
+  sleep 0.1
+  play:gs5,sustain: 3.9, amp: 0.5
+  sleep 0.1
+  play:as5,sustain: 3.8, amp: 0.5
+  sleep 0.1
+  play:ds6,sustain: 3.7, amp: 0.5
+  sleep 4
+  use_bpm 100
+  play:ds5,sustain: 1.25, amp: 0.5
+  sleep 1.25
+  play:gs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:fs4,sustain: 1, amp: 0.5
+  play:as4,sustain: 1, amp: 0.5
+  play:cs5,sustain: 1, amp: 0.5
+  sleep 1
+  
+  play:as4,sustain: 1, amp: 0.5
+  sleep 0.1
+  play:cs5,sustain: 0.9, amp: 0.5
+  sleep 0.1
+  play:fs5,sustain: 0.8, amp: 0.5
+  sleep 0.8
+  # measure
+  play:cs5,sustain: 0.75, amp: 0.5
+  play:as4,sustain: 0.75, amp: 0.5
+  sleep 0.75
+  play:as5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:gs5,sustain: 0.75, amp: 0.5
+  sleep 0.75
+  play:g5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:gs5,sustain: 1, amp: 0.5
+  play:ds5,sustain: 1, amp: 0.5
+  sleep 1
+  play:ds6,sustain: 1, amp: 0.5
+  sleep 1
+  # measure
+  play:gs5,sustain: 1, amp: 0.5
+  play:es5,sustain: 1, amp: 0.5
+  sleep 1
+  
+  play:gs5,sustain: 1, amp: 0.5
+  sleep 0.1
+  play:ds6,sustain: 0.9, amp: 0.5
+  sleep 1
+  
+  play:cs6,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:cs6,sustain: 0.16666666666, amp: 0.5
+  sleep 0.16666666666
+  play:ds6,sustain: 0.16666666666, amp: 0.5
+  sleep 0.16666666666
+  play:cs6,sustain: 0.16666666666, amp: 0.5
+  sleep 0.16666666666
+  
+  play:as5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:fs5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  # measure
+  play:gs5,sustain: 3.5, amp: 0.5
+  sleep 3.5
+  play:ds5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  #measure
+  play:gs4,sustain: 1.25, amp: 0.5
+  sleep 0.1
+  play:bs4,sustain: 1.15, amp: 0.5
+  sleep 0.1
+  play:ds5,sustain: 1.05, amp: 0.5
+  sleep 1.05
+  play:gs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:fs4,sustain: 1, amp: 0.5
+  play:as4,sustain: 1, amp: 0.5
+  play:cs5,sustain: 1, amp: 0.5
+  sleep 1
+  play:as4,sustain: 1, amp: 0.5
+  play:cs5,sustain: 1, amp: 0.5
+  play:fs5,sustain: 1, amp: 0.5
+  sleep 1
+  #measure 14
+  x = 0
+  partBarray = [:cs5,:g5,:gs5,:as5]
+  define :partB do |a|
+    play a,sustain: 0.5, amp: 0.5
+    play:as4,sustain: 0.5, amp: 0.5
+    sleep 0.5
+  end
+  4.times do
+    partB (partBarray[x])
+    x = x + 1
+  end
+  
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:bs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:cs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:as5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:bs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+   play:gs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+end
