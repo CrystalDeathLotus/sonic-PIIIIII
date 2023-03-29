@@ -5,9 +5,9 @@ flower = "C:/Users/Elias Ortiz/Downloads/Flower dance.wav"
 
 
 define :part1 do
-  play:ds5,sustain: 0.5, amp: 0.5
+  play:ds5,sustain: 0.5, amp: 0.25
   sleep 0.5
-  play:cs5,sustain: 0.5, amp: 0.5
+  play:cs5,sustain: 0.5, amp: 0.35
   sleep 0.5
   play:gs5,sustain: 0.5, amp: 0.5
   sleep 0.5
@@ -27,9 +27,10 @@ end
 
 live_loop :RightHand do
   # add 4 more part1's
-  part1
-  part1
-  part1
+  sleep 4
+  7.times do
+    part1
+  end
   # measure
   play:ds5,sustain: 4, amp: 0.5
   sleep 0.1
@@ -38,8 +39,9 @@ live_loop :RightHand do
   play:as5,sustain: 3.8, amp: 0.5
   sleep 0.1
   play:ds6,sustain: 3.7, amp: 0.5
-  sleep 4
   use_bpm 100
+  sleep 4
+  
   play:ds5,sustain: 1.25, amp: 0.5
   sleep 1.25
   play:gs4,sustain: 0.25, amp: 0.5
@@ -136,7 +138,6 @@ live_loop :RightHand do
     partB (partBarray[x])
     x = x + 1
   end
-  
   play:ds5,sustain: 0.25, amp: 0.5
   sleep 0.25
   play:bs5,sustain: 0.25, amp: 0.5
@@ -147,6 +148,93 @@ live_loop :RightHand do
   sleep 0.25
   play:bs5,sustain: 0.25, amp: 0.5
   sleep 0.25
-   play:gs5,sustain: 0.25, amp: 0.5
+  play:gs5,sustain: 0.25, amp: 0.5
   sleep 0.25
+  play:as4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:fs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  #measure
+  4.times do
+    play:gs5,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:ds6,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:cs6,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:ds6,sustain: 0.25, amp: 0.5
+    sleep 0.25
+  end
+  #measure
+  3.times do
+    play:gs5,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:ds6,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:bs5,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:ds6,sustain: 0.25, amp: 0.5
+    sleep 0.25
+  end
+  play:gs5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  # measure
+  play:bs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:as5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:bs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:cs6,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:as5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:as5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:as4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:gs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:as4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:fs5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:fs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  #measure
+  
+  play:gs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:fs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:gs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:bs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+end
+
+live_loop :sample do
+  sample flower, amp: 0.5
 end
