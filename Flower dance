@@ -9,7 +9,7 @@ define :part1 do
   sleep 0.5
   play:cs5,sustain: 0.5, amp: 0.35
   sleep 0.5
-  play:gs5,sustain: 0.5, amp: 0.5
+  play:gs5,sustain: 0.5, amp: 0.45
   sleep 0.5
   play:cs5,sustain: 0.5, amp: 0.5
   sleep 0.5
@@ -31,7 +31,7 @@ live_loop :RightHand do
   7.times do
     part1
   end
-  # measure
+  # measure 9
   play:ds5,sustain: 4, amp: 0.5
   sleep 0.1
   play:gs5,sustain: 3.9, amp: 0.5
@@ -62,7 +62,7 @@ live_loop :RightHand do
   sleep 0.1
   play:fs5,sustain: 0.8, amp: 0.5
   sleep 0.8
-  # measure
+  # measure 10
   play:cs5,sustain: 0.75, amp: 0.5
   play:as4,sustain: 0.75, amp: 0.5
   sleep 0.75
@@ -77,7 +77,7 @@ live_loop :RightHand do
   sleep 1
   play:ds6,sustain: 1, amp: 0.5
   sleep 1
-  # measure
+  # measure 11
   play:gs5,sustain: 1, amp: 0.5
   play:es5,sustain: 1, amp: 0.5
   sleep 1
@@ -100,12 +100,12 @@ live_loop :RightHand do
   sleep 0.5
   play:fs5,sustain: 0.5, amp: 0.5
   sleep 0.5
-  # measure
+  # measure 12
   play:gs5,sustain: 3.5, amp: 0.5
   sleep 3.5
   play:ds5,sustain: 0.5, amp: 0.5
   sleep 0.5
-  #measure
+  #measure 13
   play:gs4,sustain: 1.25, amp: 0.5
   sleep 0.1
   play:bs4,sustain: 1.15, amp: 0.5
@@ -154,7 +154,7 @@ live_loop :RightHand do
   sleep 0.25
   play:fs5,sustain: 0.25, amp: 0.5
   sleep 0.25
-  #measure
+  #measure 15
   4.times do
     play:gs5,sustain: 0.25, amp: 0.5
     sleep 0.25
@@ -165,7 +165,7 @@ live_loop :RightHand do
     play:ds6,sustain: 0.25, amp: 0.5
     sleep 0.25
   end
-  #measure
+  #measure 16
   3.times do
     play:gs5,sustain: 0.25, amp: 0.5
     sleep 0.25
@@ -180,7 +180,7 @@ live_loop :RightHand do
   sleep 0.5
   play:ds5,sustain: 0.5, amp: 0.5
   sleep 0.5
-  # measure
+  # measure 17
   play:bs5,sustain: 0.25, amp: 0.5
   sleep 0.25
   play:ds5,sustain: 0.25, amp: 0.5
@@ -214,7 +214,7 @@ live_loop :RightHand do
   sleep 0.25
   play:fs5,sustain: 0.25, amp: 0.5
   sleep 0.25
-  #measure
+  #measure 18
   
   play:gs5,sustain: 0.25, amp: 0.5
   sleep 0.25
@@ -233,8 +233,210 @@ live_loop :RightHand do
   sleep 0.25
   play:bs4,sustain: 0.25, amp: 0.5
   sleep 0.25
+  
+  play:fs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:e5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:ds5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:fs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  #measure 19
+  
+  play:fs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:cs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:e5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:cs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  #measure 20
+  play:cs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:e4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:e4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:a4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:e4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:gs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:e4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:ds4,sustain: 0.5, amp: 0.5
+  play:a4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds4,sustain: 0.5, amp: 0.5
+  play:gs4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds4,sustain: 0.5, amp: 0.5
+  play:fs4,sustain: 0.5, amp: 0.5
+  play:a4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  # measure 21
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:a4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:cs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:bs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:a3,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:gs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:a3,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:fs4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:fs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  # measure 22
+  
+  play:gs4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:gs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:fs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:gs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:a4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:gs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:fs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b3,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:e4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b3,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:ds4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:fs4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  #Measure 23
+  play:e4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:e5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:cs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:a4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:cs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:e5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  play:ds5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:cs5,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:b4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  play:a4,sustain: 0.25, amp: 0.5
+  sleep 0.25
+  
+  # mearuse 24
+  
+  play:gs4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:gs4,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  play:ds5,sustain: 0.5, amp: 0.5
+  sleep 0.5
+  
+  play:gs4,sustain: 2, amp: 0.5
+  sleep 2
+  
+  # Measure 25
 end
 
 live_loop :sample do
   sample flower, amp: 0.5
+  sleep 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 end
