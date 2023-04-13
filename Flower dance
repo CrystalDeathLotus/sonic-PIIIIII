@@ -127,59 +127,68 @@ live_loop :RightHand do
   play:fs5,sustain: 1, amp: 0.5
   sleep 1
   #measure 14
-  x = 0
-  partBarray = [:cs5,:g5,:gs5,:as5]
-  define :partB do |a|
-    play a,sustain: 0.5, amp: 0.5
-    play:as4,sustain: 0.5, amp: 0.5
-    sleep 0.5
-  end
-  4.times do
-    partB (partBarray[x])
-    x = x + 1
-  end
-  play:ds5,sustain: 0.25, amp: 0.5
-  sleep 0.25
-  play:bs5,sustain: 0.25, amp: 0.5
-  sleep 0.25
-  play:cs5,sustain: 0.25, amp: 0.5
-  sleep 0.25
-  play:as5,sustain: 0.25, amp: 0.5
-  sleep 0.25
-  play:bs5,sustain: 0.25, amp: 0.5
-  sleep 0.25
-  play:gs5,sustain: 0.25, amp: 0.5
-  sleep 0.25
-  play:as4,sustain: 0.25, amp: 0.5
-  sleep 0.25
-  play:fs5,sustain: 0.25, amp: 0.5
-  sleep 0.25
-  #measure 15
-  4.times do
-    play:gs5,sustain: 0.25, amp: 0.5
-    sleep 0.25
-    play:ds6,sustain: 0.25, amp: 0.5
-    sleep 0.25
-    play:cs6,sustain: 0.25, amp: 0.5
-    sleep 0.25
-    play:ds6,sustain: 0.25, amp: 0.5
-    sleep 0.25
-  end
-  #measure 16
-  3.times do
-    play:gs5,sustain: 0.25, amp: 0.5
-    sleep 0.25
-    play:ds6,sustain: 0.25, amp: 0.5
+  define :measure14and30 do
+    x = 0
+    partBarray = [:cs5,:g5,:gs5,:as5]
+    define :partB do |a|
+      play a,sustain: 0.5, amp: 0.5
+      play:as4,sustain: 0.5, amp: 0.5
+      sleep 0.5
+    end
+    4.times do
+      partB (partBarray[x])
+      x = x + 1
+    end
+    play:ds5,sustain: 0.25, amp: 0.5
     sleep 0.25
     play:bs5,sustain: 0.25, amp: 0.5
     sleep 0.25
-    play:ds6,sustain: 0.25, amp: 0.5
+    play:cs5,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:as5,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:bs5,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:gs5,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:as4,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    play:fs5,sustain: 0.25, amp: 0.5
     sleep 0.25
   end
-  play:gs5,sustain: 0.5, amp: 0.5
-  sleep 0.5
-  play:ds5,sustain: 0.5, amp: 0.5
-  sleep 0.5
+  measure14and30
+  #measure 15
+  define :measure15and31 do
+    4.times do
+      play:gs5,sustain: 0.25, amp: 0.5
+      sleep 0.25
+      play:ds6,sustain: 0.25, amp: 0.5
+      sleep 0.25
+      play:cs6,sustain: 0.25, amp: 0.5
+      sleep 0.25
+      play:ds6,sustain: 0.25, amp: 0.5
+      sleep 0.25
+    end
+  end
+  measure15and31
+  #measure 16
+  define :measure16and32 do
+    3.times do
+      play:gs5,sustain: 0.25, amp: 0.5
+      sleep 0.25
+      play:ds6,sustain: 0.25, amp: 0.5
+      sleep 0.25
+      play:bs5,sustain: 0.25, amp: 0.5
+      sleep 0.25
+      play:ds6,sustain: 0.25, amp: 0.5
+      sleep 0.25
+    end
+    play:gs5,sustain: 0.5, amp: 0.5
+    sleep 0.5
+    play:ds5,sustain: 0.5, amp: 0.5
+    sleep 0.5
+  end
+  measure16and32
   # measure 17
   play:bs5,sustain: 0.25, amp: 0.5
   sleep 0.25
@@ -434,9 +443,99 @@ live_loop :RightHand do
   sleep 2
   
   # Measure 25
+  define :partThree do
+    define :measure25and29 do
+      play:ds5,sustain: 1.25, amp: 0.5
+      sleep 0.1
+      play:b4,sustain: 1.15, amp: 0.5
+      sleep 0.1
+      play:gs4,sustain: 1.05, amp: 0.5
+      sleep 1.05
+      
+      play:ds5,sustain: 0.25, amp: 0.5
+      sleep 0.25
+      play:b4,sustain: 0.25, amp: 0.5
+      sleep 0.25
+      play:gs4,sustain: 0.25, amp: 0.5
+      sleep 0.25
+      
+      play:cs5,sustain: 1, amp: 0.5
+      play:a4,sustain: 1, amp: 0.5
+      play:fs4,sustain: 1, amp: 0.5
+      sleep 1
+      
+      play:fs5,sustain: 1, amp: 0.5
+      play:a4,sustain: 1, amp: 0.5
+      play:cs5,sustain: 1, amp: 0.5
+      sleep 1
+    end
+    measure25and29
+    # MEASURE  26
+    play:a4,sustain: 0.75, amp: 0.5
+    play:cs5,sustain: 0.75, amp: 0.5
+    sleep 0.75
+    play:a5,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    
+    play:gs5,sustain: 0.75, amp: 0.5
+    sleep 0.75
+    play:gs5,sustain: 0.25, amp: 0.5
+    sleep 0.25
+    
+    play:gs5,sustain: 1, amp: 0.5
+    play:ds5,sustain: 1, amp: 0.5
+    sleep 1
+    
+    play:ds6,sustain: 1, amp: 0.5
+    sleep 1
+    
+    #measure 27
+    play:gs5,sustain: 1, amp: 0.5
+    play:e5,sustain: 1, amp: 0.5
+    sleep 1
+    
+    play:gs5,sustain: 1, amp: 0.5
+    sleep 0.1
+    play:ds6,sustain: 0.9, amp: 0.5
+    sleep 0.9
+    
+    play:cs6,sustain: 0.5, amp: 0.5
+    sleep 0.5
+    play:cs6,sustain: 0.16666666666, amp: 0.5
+    sleep 0.16666666666
+    play:ds6,sustain: 0.16666666666, amp: 0.5
+    sleep 0.16666666666
+    play:cs6,sustain: 0.16666666666, amp: 0.5
+    sleep 0.16666666666
+    
+    play:b5,sustain: 0.5, amp: 0.5
+    sleep 0.5
+    play:fs5,sustain: 0.5, amp: 0.5
+    sleep 0.5
+    #measure 28
+    play:gs5,sustain: 3, amp: 0.5
+    sleep 3
+    
+    play:gs5,sustain: 0.5, amp: 0.5
+    sleep 0.5
+    play:ds5,sustain: 0.5, amp: 0.5
+    sleep 0.5
+    # measure 29
+    measure25and29
+    # Measure 30
+    measure14and30
+    # measure 31
+    measure15and31
+    # measure 32
+    measure16and32
+  end
+  partThree
+  partThree
+  stop
 end
 
 live_loop :sample do
+  sleep 0.075
   sample flower, amp: 0.5
   sleep 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 end
